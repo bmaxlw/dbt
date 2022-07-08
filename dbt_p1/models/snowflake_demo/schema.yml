@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: snowflake_demo
+    database: snowflake_sample_data
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: store_sales
+    description: "test-snowflake-dbt"
+
