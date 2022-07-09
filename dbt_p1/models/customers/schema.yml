@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: customer_data
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF100TCL
+    description: "Customers"
+    tables:
+      - name: CUSTOMER
