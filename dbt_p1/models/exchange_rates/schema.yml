@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: exchange_rates
+    database: ied
+    schema: public
+    description: "Exchange rates"
+    tables:
+      - name: samples
+    
+
