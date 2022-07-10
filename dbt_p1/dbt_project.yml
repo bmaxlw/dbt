@@ -39,6 +39,6 @@ models:
       +tags: 'rates'
 
     customers:
-      +marerialized: table
+      +marerialized: view
       +schema: stg
       +tags: 'customers'

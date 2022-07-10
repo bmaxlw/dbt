@@ -1,9 +1,23 @@
 version: 2
 
 sources:
-  - name: customer_data
+  - name: customer_source
     database: SNOWFLAKE_SAMPLE_DATA
     schema: TPCDS_SF100TCL
     description: "Customers"
     tables:
       - name: CUSTOMER
+
+models:
+  - name: customer_data
+    description: 'Customer model'
+    columns: 
+        - name: customer_id
+          description: 'Primary key'
+          tests:
+              - unique
+              - not_null
+        - name: customer_full_name
+          description: 'Full name'
+          tests:
+              - not_null

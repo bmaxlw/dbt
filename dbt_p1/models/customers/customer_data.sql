@@ -18,7 +18,7 @@ with customers_1990 as(
                 current_date()) as customer_age,
         c_birth_country as customer_birth_country,
         c_email_address as customer_email
-    from {{source('customer_data', 'CUSTOMER')}}
+    from {{source('customer_source', 'CUSTOMER')}}
     where c_birth_year >= 1990
 ),
 final as(
