@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 with customers_1990 as(
     select 
         c_customer_sk as customer_id,
