@@ -37,8 +37,3 @@ models:
     exchange_rates:
       +materialized: view
       +tags: 'rates'
-
-    customers:
-      +marerialized: view
-      +schema: stg
-      +tags: 'customers'

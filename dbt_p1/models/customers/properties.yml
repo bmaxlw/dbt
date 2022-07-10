@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: customer_data
+    description: 'Customer model'
+    columns: 
+        - name: customer_id
+          description: 'Primary key'
+          tests:
+              - unique
+              - not_null
+        - name: customer_full_name
+          description: 'Full name'
+          tests:
+              - not_null
+    config: 
+        materialized: table
+        tags: 'customers'
+        schema: 'staging'

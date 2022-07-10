@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+-- {{ config(materialized='table') }}
 
 with customers_1990 as(
     select 
