@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: btc
+    description: 'BTC model'
+    config: 
+        materialized: table
+        tags: 'rates'
+        schema: 'rates'
+
+  - name: czk
+    description: 'CZK model'
+    config: 
+        materialized: table
+        tags: 'rates'
+        schema: 'rates'
+
+  - name: gbp
+    description: 'GBP model'
+    config: 
+        materialized: table
+        tags: 'rates'
+        schema: 'rates'
