@@ -13,6 +13,10 @@ models:
           description: 'Full name'
           tests:
               - not_null
+        - name: customer_age
+          description: 'Customer age'
+          tests: 
+              - age_gt_32
     config: 
         materialized: table
         tags: 'customers'
