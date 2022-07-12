@@ -17,6 +17,11 @@ models:
           description: 'Customer age'
           tests: 
               - age_gt_32
+        - name: customer_birth_country
+          description: 'Customer birth country'
+          tests:
+              - country_exists:
+                  field: customer_birth_country
     config: 
         materialized: table
         tags: 'customers'
